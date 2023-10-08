@@ -52,28 +52,31 @@
         }
 
         .mycomment {
-            color: grey;
+            color: grasy;
         }
 
         .mycards {
             width: 1200px;
             margin: 20px auto 20px auto;
         }
+
         .mypost {
             width: 500px;
             margin: 20px auto 20px auto;
             padding: 20px 20px 20px 20px;
             box-shadow: 0px 0px 3px 0px gray;
         }
+
         .mybtn {
-                       display: flex;
+            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
 
         }
-        .mybtn >button {
+
+        .mybtn > button {
             margin-right: 10px;
         }
     </style>
@@ -81,13 +84,24 @@
 
 <body>
 <div class="mytitle">
-    <h1>ここで変更できますよ</h1>
+    <h1>人生最高の映画</h1>
     <button>映画記録</button>
 </div>
 <div class="mypost">
     <div class="form-floating mb-3">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">映画URL</label>
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">採点</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option selected>--選択--</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
     </div>
     <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
